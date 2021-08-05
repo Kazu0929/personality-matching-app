@@ -19,7 +19,7 @@ export default {
         title: '診断結果',
         description: 'あなたの性格はドライビングでした',
         url: 'https://dear-personality.netlify.app/result/driving',
-        image: '/peep-47.png',
+        image: 'https://dear-personality.netlify.app/peep-47.png',
       },
     };
   },

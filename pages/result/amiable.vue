@@ -19,7 +19,7 @@ export default {
         title: '診断結果',
         description: 'あなたの性格はアミアブルでした',
         url: 'https://dear-personality.netlify.app/result/amiable',
-        image: '/peep-73.png',
+        image: 'https://dear-personality.netlify.app/peep-73.png',
       },
     };
   },

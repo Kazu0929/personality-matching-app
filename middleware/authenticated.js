@@ -15,8 +15,9 @@ export default ({ store, route, redirect }) => {
       !user &&
       (route.name === 'diagnose' ||
         route.name === 'mypage' ||
-        route.name === 'result' ||
-        route.name === 'personality')
+        route.name === 'personality' ||
+        route.name === 'messages' ||
+        route.name === 'admin')
     ) {
       redirect('/');
     }

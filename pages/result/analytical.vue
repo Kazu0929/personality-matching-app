@@ -19,7 +19,7 @@ export default {
         title: '診断結果',
         description: 'あなたの性格はアナリティカルでした',
         url: 'https://dear-personality.netlify.app/result/analytical',
-        image: '/peep-8.png',
+        image: 'https://dear-personality.netlify.app/peep-8.png',
       },
     };
   },

@@ -19,7 +19,7 @@ export default {
         title: '診断結果',
         description: 'あなたの性格はエクスプレッシブでした',
         url: 'https://dear-personality.netlify.app/result/expressive',
-        image: '/peep-17.png',
+        image: 'https://dear-personality.netlify.app/peep-17.png',
       },
     };
   },
