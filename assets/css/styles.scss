@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'title'; // <-好きな名前をつけれます。
+  src: url('../Perfograma-Regular.otf') format('opentype');
+}
+
+@import '~bulma/sass/utilities/_all';
+
+$primary: #3da9fc;
+$primary-invert: findColorInvert($primary);
+
+$colors: (
+  'primary': (
+    $primary,
+    $primary-invert,
+  ),
+);
+
+a.nuxt-link-active,
+a.nuxt-link-exact-active {
+  color: $primary;
+}
+
+p,
+h2,
+li {
+  font-family: 'Kosugi Maru';
+  color: #5f6c7b;
+}
+
+body {
+  background: #b2fefa; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0ed2f7, #b2fefa); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #0ed2f7,
+    #b2fefa
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  min-height: 100vh;
+}
+.page-title {
+  font-size: 4rem;
+  font-family: 'title';
+  letter-spacing: 0.2em;
+  color: #094067;
+}
+
+.item-title {
+  font-family: 'Kosugi Maru';
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+.container {
+  text-align: center;
+  height: 100vh;
+}
+
+.error-message {
+  text-align: center;
+  color: red;
+}
+
+@import '~bulma';
+@import '~buefy/src/scss/buefy';

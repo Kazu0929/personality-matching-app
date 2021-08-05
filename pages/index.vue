@@ -1,53 +1,78 @@
 <template>
-  <section class="section">
-    <div class="columns is-mobile">
-      <card
-        title="Free"
-        icon="github"
-      >
-        Open source on <a href="https://github.com/buefy/buefy">
-          GitHub
-        </a>
-      </card>
-
-      <card
-        title="Responsive"
-        icon="cellphone-link"
-      >
-        <b class="has-text-grey">
-          Every
-        </b> component is responsive
-      </card>
-
-      <card
-        title="Modern"
-        icon="alert-decagram"
-      >
-        Built with <a href="https://vuejs.org/">
-          Vue.js
-        </a> and <a href="http://bulma.io/">
-          Bulma
-        </a>
-      </card>
-
-      <card
-        title="Lightweight"
-        icon="arrange-bring-to-front"
-      >
-        No other internal dependency
-      </card>
+  <div class="container">
+    <h1 class="page-title">
+      Dear
+    </h1>
+    <div class="box columns reverse-row-order">
+      <div class="column">
+        <img class="title-image" src="../assets/image/title.svg" alt="タイトルイメージ" />
+      </div>
+      <div class="column">
+        <h1>
+          Find the best friends
+        </h1>
+        <p v-for="sentence in sentences" :key="sentence">{{ sentence }}</p>
+        <nuxt-link class="button is-primary" :to="{ path: '/signUp' }">
+          会員登録
+        </nuxt-link>
+        <nuxt-link class="button is-primary" :to="{ path: '/signIn' }">
+          サインイン
+        </nuxt-link>
+      </div>
     </div>
-  </section>
+    <DiagnosisTime />
+  </div>
 </template>
 
 <script>
-import Card from '~/components/Card'
-
 export default {
-  name: 'HomePage',
-
-  components: {
-    Card
-  }
-}
+  data() {
+    return {
+      sentences: [
+        'このサービスはソーシャルスタイル理論を基にした',
+        '性格診断マッチングアプリです。',
+        '同じタイプとのみマッチングし、',
+        '気の合う友人を見つける事ができます。',
+        'また自分のタイプを知り、自己理解を深めましょう。',
+        '他のタイプの人との接し方を学びましょう。',
+      ],
+    };
+  },
+};
 </script>
+
+<style scoped>
+.box {
+  padding: 0;
+}
+
+.column {
+  padding: 0;
+  height: 398.48px;
+}
+
+.title-image {
+  border-radius: 6px;
+}
+
+.column h1 {
+  font-size: 2rem;
+  margin: 1rem 0;
+  font-family: 'title';
+}
+
+.column p {
+  font-size: 1.4rem;
+}
+
+.button {
+  margin-top: 2rem;
+  margin-bottom: 2.4rem;
+  margin-right: 2rem;
+  width: 30%;
+}
+
+.reverse-row-order {
+  flex-direction: row-reverse;
+}
+</style>

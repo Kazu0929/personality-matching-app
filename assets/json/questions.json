@@ -1,0 +1,22 @@
+[
+  { "question": "自己主張する事が下手だと思う", "type": "Analytical" },
+  { "question": "未来に対して情熱を持っている方だ", "type": "Expressive" },
+  { "question": "人のためにしたことを感謝されないと悔しくなる", "type": "Amiable" },
+  { "question": "嫌なことははっきりとNOと言える", "type": "Driving" },
+  { "question": "人には気を許さない方だ", "type": "Analytical" },
+  { "question": "人から楽しい人だとよく言われる", "type": "Expressive" },
+  { "question": "短い時間に出来るだけ多くのことをしたい", "type": "Driving" },
+  { "question": "失敗からの立ち直りが早い方だ", "type": "Expressive" },
+  { "question": "人から頼まれたことになかなかノーと言えない", "type": "Amiable" },
+  { "question": "多くの情報を検討して決断を下す", "type": "Analytical" },
+  { "question": "人の話を聞くより、自分が話すことの方が多い", "type": "Expressive" },
+  { "question": "自分は人見知りだと思う", "type": "Analytical" },
+  { "question": "自分と他人をよく比較する", "type": "Amiable" },
+  { "question": "変化や混乱にすぐ適応できる方だ", "type": "Expressive" },
+  { "question": "感情を表現することが苦手だと思う", "type": "Analytical" },
+  { "question": "相手の好き嫌いに関わらず、人の世話をする", "type": "Amiable" },
+  { "question": "自分の思ったことはストレートに言う", "type": "Driving" },
+  { "question": "仕事の成果について人から認められたい", "type": "Amiable" },
+  { "question": "自分は競争心が強いと思う", "type": "Driving" },
+  { "question": "何事も完璧に行わないと気が済まない", "type": "Driving" }
+]
