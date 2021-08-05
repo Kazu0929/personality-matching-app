@@ -41,8 +41,10 @@ export default {
     ]),
   },
   created() {
-    this.fetchNumberOfUsersByPersonalityType();
-    this.sumNumberOfUsersByPersonalityType();
+    if (!this.getNumberOfUsersByPersonalityType || !this.getTotalNumberOfPersonalityType) {
+      this.fetchNumberOfUsersByPersonalityType();
+      this.sumNumberOfUsersByPersonalityType();
+    }
   },
   methods: {
     ...mapActions(['fetchNumberOfUsersByPersonalityType', 'sumNumberOfUsersByPersonalityType']),

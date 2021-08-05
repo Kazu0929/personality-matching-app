@@ -13,6 +13,28 @@
 <script>
 import { mapGetters, mapActions } from 'vuex';
 export default {
+  data() {
+    return {
+      meta: {
+        title: '診断結果',
+        description: 'あなたの性格はドライビングでした',
+        url: 'https://dear-personality.netlify.app/result/driving',
+        image: '/peep-47.png',
+      },
+    };
+  },
+  head() {
+    return {
+      meta: [
+        { hid: 'description', name: 'description', content: this.meta.description },
+        { hid: 'og:title', property: 'og:title', content: this.meta.title },
+        { hid: 'og:description', property: 'og:description', content: this.meta.description },
+        { hid: 'og:url', property: 'og:url', content: this.meta.url },
+        { hid: 'og:image', property: 'og:image', content: this.meta.image },
+        { hid: 'twitter:image', name: 'twitter:image', content: this.meta.image },
+      ],
+    };
+  },
   computed: {
     ...mapGetters([
       'getTypes',

@@ -25,6 +25,7 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex';
 export default {
   data() {
     return {
@@ -37,6 +38,13 @@ export default {
         '他のタイプの人との接し方を学びましょう。',
       ],
     };
+  },
+  created() {
+    this.fetchNumberOfUsersByPersonalityType();
+    this.sumNumberOfUsersByPersonalityType();
+  },
+  methods: {
+    ...mapActions(['fetchNumberOfUsersByPersonalityType', 'sumNumberOfUsersByPersonalityType']),
   },
 };
 </script>

@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'personality-matching-app',
+    title: 'DEAR 性格マッチングアプリ',
     htmlAttrs: {
       lang: 'ja',
     },
@@ -15,7 +15,7 @@ export default {
       },
       { hid: 'og:site_name', property: 'og:site_name', content: 'DEAR 性格マッチングアプリ' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
-      { hid: 'og:url', property: 'og:url', content: 'https://efac3002b542.ngrok.io' },
+      { hid: 'og:url', property: 'og:url', content: 'https://dear-personality.netlify.app' },
       { hid: 'og:title', property: 'og:title', content: 'DEAR' },
       {
         hid: 'og:description',
