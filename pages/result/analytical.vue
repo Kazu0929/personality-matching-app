@@ -17,10 +17,13 @@ export default {
     return {
       meta: {
         title: '診断結果',
-        description: 'あなたの性格はアナリティカルでした',
+        description: 'あなたの性格はアナリティカルでした。',
         url: 'https://dear-personality.netlify.app/result/analytical',
         image: 'https://dear-personality.netlify.app/peep-8.png',
       },
+      url: 'https://dear-personality.netlify.app/result/analytical/',
+      text:
+        'あなたの性格はアナリティカルでした。何事も分析する理論派です。詳細はリンクをクリック！',
     };
   },
   head() {
@@ -31,6 +34,7 @@ export default {
         { hid: 'og:description', property: 'og:description', content: this.meta.description },
         { hid: 'og:url', property: 'og:url', content: this.meta.url },
         { hid: 'og:image', property: 'og:image', content: this.meta.image },
+        { name: 'twitter:card', content: 'summary' },
         { hid: 'twitter:image', name: 'twitter:image', content: this.meta.image },
       ],
     };

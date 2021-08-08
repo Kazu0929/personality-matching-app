@@ -1,5 +1,5 @@
 <template>
-  <div class="box column ">
+  <div class="column ">
     <div v-for="(type, index) in types" :key="index">
       <h1 class="item-title">{{ type.name }}</h1>
       <img :src="require(`../assets/image/${type.image}`)" />
