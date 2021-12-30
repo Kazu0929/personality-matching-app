@@ -597,7 +597,6 @@ export const actions = {
             const personalityData = childData.personality_type;
             usersOfPersonalityData.push(personalityData);
           });
-          console.log(usersOfPersonalityData);
           const numberOfUsersByPersonalityType = [];
           const numberOfDriving = usersOfPersonalityData.filter((user) => {
             return user === 'ドライビング';
@@ -615,7 +614,6 @@ export const actions = {
           numberOfUsersByPersonalityType.push(numberOfExpressive.length);
           numberOfUsersByPersonalityType.push(numberOfAmiable.length);
           numberOfUsersByPersonalityType.push(numberOfAnalytical.length);
-          console.log(numberOfUsersByPersonalityType);
           commit('setNumberOfUsersByPersonalityType', numberOfUsersByPersonalityType);
         });
     } catch (error) {

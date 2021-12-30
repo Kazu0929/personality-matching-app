@@ -56,7 +56,7 @@ export default {
 
 .column {
   padding: 0;
-  height: 398.48px;
+  height: 398px;
 }
 
 .title-image {
