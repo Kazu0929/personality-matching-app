@@ -64,7 +64,7 @@ export default {
         this.setPersonalityType(user.uid);
         console.log(user);
         this.setUser(user);
-        if (user.uid === 'D3Ylfh08vwanAb8nfIeLPgswAjp2') {
+        if (user.uid === 'YPzg0UqQOiSJCTgie3Zx2Kyz9jc2') {
           this.checkIsAdmin();
         }
       }
