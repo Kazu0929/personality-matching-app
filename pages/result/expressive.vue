@@ -2,14 +2,12 @@
   <div class="container">
     <h1 class="page-title">result</h1>
     <div class="box">
-      <div class="box">
-        <PersonalityType
-          :types="getTypes.expressive"
-          :number="getNumberOfUsersByPersonalityType[1].number"
-          :totalNum="getTotalNumberOfPersonalityType"
-        />
-        <ResultButtons :url="url" :text="text" />
-      </div>
+      <PersonalityType
+        :types="getTypes.expressive"
+        :number="getNumberOfUsersByPersonalityType[1].number"
+        :totalNum="getTotalNumberOfPersonalityType"
+      />
+      <ResultButtons :url="url" :text="text" />
     </div>
   </div>
 </template>
@@ -28,7 +26,6 @@ export default {
       url: 'https://dear-personality.netlify.app/result/expressive/',
       text:
         'あなたの性格はエクスプレッシブでした。周りから注目されるのが好きな人気者です。詳細はリンクをクリック！',
-      isShow: false,
     };
   },
   head() {

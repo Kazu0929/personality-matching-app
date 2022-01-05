@@ -23,7 +23,7 @@ export default {
         url: 'https://dear-personality.netlify.app/result/driving',
         image: 'https://dear-personality.netlify.app/peep-47.png',
       },
-      url: 'https://dear-personality.netlify.app/result/driginv/',
+      url: 'https://dear-personality.netlify.app/result/driving/',
       text:
         'あなたの性格はドライビングでした。冷静で非常に合理的な人です。詳細はリンクをクリック！',
     };
