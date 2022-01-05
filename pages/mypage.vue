@@ -10,14 +10,7 @@
           <nuxt-link class="button is-primary" :to="{ path: '/personality' }">
             性格タイプを見る
           </nuxt-link>
-          <nuxt-link
-            v-if="getPersonalityType !== 未鑑定"
-            class="button is-primary"
-            :to="{ path: '/diagnose' }"
-          >
-            もう一度診断する
-          </nuxt-link>
-          <nuxt-link v-else class="button is-primary" :to="{ path: '/diagnose' }">
+          <nuxt-link class="button is-primary" :to="{ path: '/diagnose' }">
             診断する
           </nuxt-link>
         </div>

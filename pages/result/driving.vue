@@ -1,12 +1,14 @@
 <template>
   <div class="container">
     <h1 class="page-title">result</h1>
-    <PersonalityType
-      :types="getTypes.driving"
-      :number="getNumberOfUsersByPersonalityType[0].number"
-      :totalNum="getTotalNumberOfPersonalityType"
-    />
-    <ResultButtons />
+    <div class="box">
+      <PersonalityType
+        :types="getTypes.driving"
+        :number="getNumberOfUsersByPersonalityType[0].number"
+        :totalNum="getTotalNumberOfPersonalityType"
+      />
+      <ResultButtons :url="url" :text="text" />
+    </div>
   </div>
 </template>
 
