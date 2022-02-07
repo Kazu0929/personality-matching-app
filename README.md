@@ -92,5 +92,10 @@ buefy
 
 ## バックエンド
 
-Firebase  
+Firebase
+
+<br>
+
+## インフラ
+
 Netlify
